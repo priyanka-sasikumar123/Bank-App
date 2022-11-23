@@ -18,18 +18,18 @@
           <!-- String interpolation -->
           <h6 class="m-3">{{aim}}</h6>
         </div>
-        <form class="container-25 text-center">
+        <div class="text-center">
           <div class="mb-3">
-            <input #acno type="text"  class="input-group-sm" id="accnt_no" [placeholder]="account"> 
+            <input [(ngModel)]="acno" type="text"  class="input-group-sm" id="accnt_no" [placeholder]="account"> 
           </div>
           <div class="container-25 text-center">
-            <input type="text" #pswd class="input-group-sm" id="pass" placeholder="Password">
+            <input  [(ngModel)]="pswd"  type="password" class="input-group-sm" id="pass" placeholder="Password">
           </div>
           <div class="container-25 text-center mt-4">
-            <button class="btn border-secondary bg-success" (click)="login(acno,pswd)" type="button">Login</button>
+            <button class="btn border-secondary bg-success" (click)="login()" type="button">Login</button>
             <a href="signup.html">Register</a>
           </div>
-        </form>
+        </div>
       </div>
 
     </div>
