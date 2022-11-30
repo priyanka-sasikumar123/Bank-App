@@ -31,13 +31,13 @@ data sharing only one direction(ts->html or html->ts)
        b)Event binding using $event-(event_name)="function_name($event)"
        c)Event binding using template referencing variable - #variable_name
 
-  2)Two way data binding
+ 2)Two way data binding
   Data sharing in both direction (ts->html,html->ts)
    1)ngModel Binding - import formsModule in app.module.ts
     
     synatx- [(ngModel)]="property_name"
 
-Angular Routing
+3)Angular Routing
 
 To set path for component
 
@@ -49,3 +49,30 @@ login
 {
      path:'',component:LoginComponent
 }
+
+4)Angular services
+     To hold redundant data
+     To create new service ng g s service_name
+
+5)Dependency Injection
+     To share data between dependend classes
+    
+            constructor(private ds:DataService)
+
+6)Angular Directives to manipulate DOM
+ 
+     a)component Directives(array)//save data in an array format
+
+
+     b)Structural Directives(table)//save data in a table format
+          ->*ngfor  //as a for loop
+
+7)Angular Forms//for advanced validation
+ 
+  a)Template driven Forms(first design in html page)
+  b)Modal driven Forms(first design model in ts file)
+          1)Reactive Forms
+            formGroup,array,control
+          import from Reactive forms module(in app.module.ts)
+
+   
